@@ -16,14 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="zTm-pt-neR">
+                                <rect key="frame" x="186" y="325" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eoj-jB-Acw">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eoj-jB-Acw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7YS-Kd-Tyl"/>
+                            <constraint firstItem="Eoj-jB-Acw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QaO-iT-RHz"/>
+                            <constraint firstItem="Eoj-jB-Acw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lgR-Xv-oTF"/>
+                            <constraint firstAttribute="bottom" secondItem="Eoj-jB-Acw" secondAttribute="bottom" id="wrz-L7-Lid"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6XF-jA-g8P"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="zTm-pt-neR" id="Ofn-Uf-zK4"/>
+                        <outlet property="imageView" destination="Eoj-jB-Acw" id="mpF-Oj-2gQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842" y="-372"/>
+            <point key="canvasLocation" x="1841.9847328244275" y="-372.53521126760563"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="4Fp-5C-Rax">

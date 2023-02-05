@@ -19,6 +19,7 @@
 		3198E3AB29883D230088C313 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3AA29883D230088C313 /* MainCollectionViewController.swift */; };
 		3198E3AF298845F20088C313 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3AE298845F20088C313 /* UserActionCell.swift */; };
 		3198E3B3298857FD0088C313 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3B2298857FD0088C313 /* CoursesViewController.swift */; };
+		3198E3B9298FCB260088C313 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3B8298FCB260088C313 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3198E3AA29883D230088C313 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		3198E3AE298845F20088C313 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		3198E3B2298857FD0088C313 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		3198E3B8298FCB260088C313 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		3198E3782986AC930088C313 /* NetworkSessionsApp */ = {
 			isa = PBXGroup;
 			children = (
+				3198E3B7298FCB0F0088C313 /* Models */,
 				3198E3A92986ACA20088C313 /* Service */,
 				3198E3B62988583D0088C313 /* ViewCollections */,
 				3198E3B52988582B0088C313 /* Cells */,
@@ -166,6 +169,14 @@
 				3198E3B2298857FD0088C313 /* CoursesViewController.swift */,
 			);
 			path = ViewCollections;
+			sourceTree = "<group>";
+		};
+		3198E3B7298FCB0F0088C313 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3198E3B8298FCB260088C313 /* Course.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3198E3AF298845F20088C313 /* UserActionCell.swift in Sources */,
+				3198E3B9298FCB260088C313 /* Course.swift in Sources */,
 				3198E37E2986AC930088C313 /* ImageViewController.swift in Sources */,
 				3198E37A2986AC930088C313 /* AppDelegate.swift in Sources */,
 				3198E3AB29883D230088C313 /* MainCollectionViewController.swift in Sources */,
