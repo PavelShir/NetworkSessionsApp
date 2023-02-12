@@ -20,6 +20,7 @@
 		3198E3AF298845F20088C313 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3AE298845F20088C313 /* UserActionCell.swift */; };
 		3198E3B3298857FD0088C313 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3B2298857FD0088C313 /* CoursesViewController.swift */; };
 		3198E3B9298FCB260088C313 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3B8298FCB260088C313 /* Course.swift */; };
+		3198E3BD299954DC0088C313 /* CourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3198E3BC299954DC0088C313 /* CourceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3198E3AE298845F20088C313 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		3198E3B2298857FD0088C313 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		3198E3B8298FCB260088C313 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		3198E3BC299954DC0088C313 /* CourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		3198E3B52988582B0088C313 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3198E3BC299954DC0088C313 /* CourceCell.swift */,
 				3198E3AE298845F20088C313 /* UserActionCell.swift */,
 			);
 			path = Cells;
@@ -314,6 +317,7 @@
 				3198E3B9298FCB260088C313 /* Course.swift in Sources */,
 				3198E37E2986AC930088C313 /* ImageViewController.swift in Sources */,
 				3198E37A2986AC930088C313 /* AppDelegate.swift in Sources */,
+				3198E3BD299954DC0088C313 /* CourceCell.swift in Sources */,
 				3198E3AB29883D230088C313 /* MainCollectionViewController.swift in Sources */,
 				3198E37C2986AC930088C313 /* SceneDelegate.swift in Sources */,
 				3198E3B3298857FD0088C313 /* CoursesViewController.swift in Sources */,

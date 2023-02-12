@@ -71,10 +71,19 @@ class MainCollectionViewController: UICollectionViewController {
         case .showCourses: performSegue(withIdentifier: "showCourses", sender: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCourses" {
+            guard let coursesVC = segue.destination as? CoursesViewController else { return }
+            
+            coursesVC.fetchCourses()
+        }
+    }
 
 }
 
 extension MainCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)
         
@@ -122,6 +131,7 @@ extension MainCollectionViewController {
             }
             
             let jsonDecoder = JSONDecoder()
+            jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
             
             do {
                 let course = try jsonDecoder.decode(Course.self, from: data)
@@ -153,6 +163,7 @@ extension MainCollectionViewController {
                 }
             }.resume()
         }
+         
         
         private func fetchInfoAbout() {
             guard let url = URL(string: Link.aboutUsURL.rawValue) else { return }
@@ -163,10 +174,8 @@ extension MainCollectionViewController {
                     return
                 }
                 
-                let jsonDecoder = JSONDecoder()
-                
                 do {
-                    let aboutUs = try jsonDecoder.decode(aboutUs.self, from: data)
+                    let aboutUs = try JSONDecoder().decode(aboutUs.self, from: data)
                     self.successAlert()
                 } catch {
                     print(error.localizedDescription)
